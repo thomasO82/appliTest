@@ -1,0 +1,10 @@
+<div>
+    <p>coucou</p>
+    <div *ngFor="let user of arrayUsers">
+        <p>{{user.firstname}}</p>
+        <p>{{user.name}}</p>
+        <p>{{user.adress_mail}}</p>
+        <p *ngIf="user.password == 'babaorhum'">{{user.password}}</p>
+    </div>
+    <app-user></app-user>
+</div>
